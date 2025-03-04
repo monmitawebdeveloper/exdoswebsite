@@ -1,0 +1,88 @@
+@use "../../utils/" as *;
+
+.mt-poject-tab-area {
+  padding-right: 100px;
+  @media #{$md} {
+    padding: 0 40px;
+  }
+  @media #{$xs} {
+    padding: 0 15px;
+  }
+}
+.mt-project-tab {
+  @media #{$md} {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  & button {
+    color: #ffffff;
+    font-size: 100px;
+    font-family: var(--mt-font-heading);
+    line-height: 1;
+    border-bottom: 1px solid #2f446b;
+    padding: 22px 90px;
+    text-align: left;
+    transition: 0.3s;
+
+    @media #{$xxlm} {
+      font-size: 80px;
+    }
+
+    @media #{$xl} {
+      font-size: 70px;
+      padding-left: 40px;
+    }
+
+    @media #{$lg} {
+      font-size: 60px;
+      padding-left: 50px;
+      width: 100%;
+      display: block;
+    }
+
+    @media #{$md} {
+      font-size: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+    @media #{$xs} {
+      font-size: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 10px;
+    }
+    &.active {
+      color: var(--mt-theme-color-2);
+      border-color: var(--mt-theme-color-2);
+    }
+  }
+
+  &-thumb {
+    & img {
+      border-radius: 20px;
+    }
+  }
+
+  &-btn {
+    @media #{$lg} {
+      margin-top: 50px !important;
+    }
+  }
+
+  &-content {
+    @media #{$lg} {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+    }
+
+    @media #{$md} {
+      margin-top: 50px;
+      padding-left: 0 !important;
+    }
+    @media #{$xs} {
+      padding-left: 0 !important;
+    }
+  }
+}

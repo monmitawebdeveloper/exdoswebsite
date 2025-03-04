@@ -1,0 +1,88 @@
+@use "../../utils/" as *;
+
+.mt-newsletter {
+  &-margin {
+    margin-top: -110px;
+  }
+
+  &-bg {
+    padding: 80px;
+    border-radius: 20px;
+
+    @media #{$md} {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media #{$xs} {
+      padding: 60px 15px;
+    }
+  }
+
+  &-box {
+    @media #{$lg} {
+      margin-top: 30px;
+    }
+
+    & form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media #{$xs} {
+        display: block;
+      }
+    }
+
+    & input {
+      border-color: #fff !important;
+      color: #ffffff;
+
+      &:focus {
+        border-color: #fff;
+        color: #ffffff;
+        text-transform: capitalize;
+      }
+
+      @include mt-placeholder {
+        color: var(--mt-white) !important;
+        font-size: 17px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &-input {
+    width: calc(100% - 215px);
+    @media #{$xs} {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    & img {
+      position: absolute;
+      top: 22px;
+      right: 0;
+    }
+  }
+
+  &-back {
+    font-size: 100px;
+    color: #ffffff;
+    opacity: 10%;
+    margin: 0;
+    position: absolute;
+    left: 85px;
+    bottom: -35px;
+    letter-spacing: 1px;
+
+    @media #{$xl} {
+      font-size: 75px;
+      left: 70px;
+      top: -8px;
+    }
+
+    @media #{$md} {
+      font-size: 75px;
+      left: 30px;
+    }
+  }
+}

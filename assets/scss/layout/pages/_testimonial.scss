@@ -1,0 +1,137 @@
+@use "../../utils/" as *;
+
+.mt-testimonial {
+  &-desc {
+    font-size: 100px;
+
+    @media #{$xl} {
+      font-size: 75px;
+    }
+
+    @media #{$lg} {
+      font-size: 60px;
+    }
+
+    @media #{$md} {
+      font-size: 50px;
+    }
+    @media #{$xs} {
+      font-size: 35px;
+    }
+  }
+
+  &-name {
+    margin-bottom: 8px;
+  }
+
+  &-desig {
+    color: #57595c;
+    font-size: 17px;
+    margin-right: -75px;
+
+    & span {
+      height: 1px;
+      width: 60px;
+      background-color: #57595c;
+      display: inline-block;
+      transform: translateY(-5px);
+      margin-right: 5px;
+    }
+  }
+
+  &-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -2;
+  }
+}
+
+.mt-swiper-test-button {
+  position: absolute;
+  left: -100px;
+  top: 34%;
+  font-size: 52px;
+  z-index: 9;
+  display: inline-flex;
+
+  @media #{$xxlm, $xl,$md} {
+    left: 0;
+    top: inherit;
+    bottom: -12px;
+  }
+
+  @media #{$xs} {
+    display: inline-block;
+    position: static;
+    margin-top: 30px;
+  }
+  @media #{$lg} {
+    left: 0;
+  }
+
+  &-next {
+    left: auto;
+    right: -100px;
+
+    @media #{$xxlm, $xl, $md} {
+      left: 60px;
+      bottom: -16px;
+      right: inherit;
+    }
+    @media #{$xs} {
+      display: inline-block;
+      position: static;
+      margin-top: 30px;
+    }
+
+    @media #{$lg} {
+      right: 0;
+    }
+  }
+}
+
+.mt-rot-180 {
+  transform: rotate(180deg);
+}
+
+.mt-testimonial-shape {
+  & span {
+    font-size: 668px;
+    opacity: 0.15;
+
+    @media #{$xl} {
+      font-size: 530px;
+      opacity: 0.15;
+    }
+
+    @media #{$lg} {
+      font-size: 550px;
+      opacity: 0.15;
+    }
+
+    @media #{$md} {
+      font-size: 460px;
+      opacity: 0.15;
+    }
+    @media #{$xs} {
+      font-size: 390px;
+      opacity: 0.15;
+    }
+  }
+
+  &-thumb-1 {
+    top: 110px;
+    left: 0;
+
+    @media #{$xl} {
+      top: 70px;
+    }
+  }
+
+  &-thumb-2 {
+    top: 35px;
+    right: -15px;
+  }
+}

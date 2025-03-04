@@ -1,0 +1,11 @@
+sass --watch "E:\Selim Rana - Envato\00 - Class_practice\starter sass pack for envato - 2024\Expro-practice\assets\scss\main.scss":"E:\Selim Rana - Envato\00 - Class_practice\starter sass pack for envato - 2024\Expro-practice\assets\css\style.css"
+
+
+
+
+
+
+
+
+
+sass --watch assets\scss\main.scss:assets\css\style.css (for vs code)

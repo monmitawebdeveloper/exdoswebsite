@@ -1,0 +1,72 @@
+@use "../../utils/" as *;
+
+.mtaward__wrapper {
+  & .row {
+    & .col-md-6:nth-child(even) {
+      & .mtaward {
+        padding-left: 50px;
+        border-left: 1px solid #57595c;
+        @media #{$xs} {
+          padding-left: 0;
+          border-left: 0;
+        }
+      }
+    }
+
+    & .col-md-6:nth-child(1) {
+      & .mtaward {
+        padding-top: 0;
+      }
+    }
+
+    & .col-md-6:nth-child(2) {
+      & .mtaward {
+        padding-top: 0;
+      }
+    }
+
+    & .col-md-6:nth-last-child(-n + 2) {
+      & .mtaward {
+        border-bottom: 0;
+        padding-bottom: 5px;
+        @media #{$xs} {
+          border-bottom: 1px solid #57595c;
+        }
+      }
+    }
+  }
+}
+
+.mtaward {
+  border-bottom: 1px solid #57595c;
+  padding: 38px 0;
+  @media #{$xs} {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  &__wrapper {
+    padding-right: 83px;
+
+    @media #{$lg,$md,$xs} {
+      padding-right: 0px;
+    }
+  }
+
+  & span {
+    font-family: var(--mt-font-heading);
+    font-size: 20px;
+    color: var(--mt-body-color);
+    line-height: 50px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-family: var(--mt-font-heading);
+    margin-bottom: 15px;
+
+    @media #{$xl} {
+      font-size: 25px;
+    }
+  }
+}

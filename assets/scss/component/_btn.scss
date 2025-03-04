@@ -1,0 +1,125 @@
+@use "../utils/" as *;
+
+.mt-btn {
+  background-color: var(--mt-theme-color);
+  padding: 22px 46px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: var(--mt-font-heading);
+  color: var(--mt-white);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  & i {
+    height: 100%;
+    width: 22px;
+    background-color: #71a2ff;
+    position: absolute;
+    bottom: -3px;
+    right: -9px;
+    transform: rotate(16deg);
+    transition: 0.3s;
+  }
+  &:hover {
+    & .mt-btn-y-1 {
+      transform: translateY(-100%);
+    }
+    & .mt-btn-y-2 {
+      transform: translateY(0);
+    }
+    & i {
+      right: -100px;
+    }
+  }
+  &-wrap {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    & span {
+      transition: 0.3s;
+      display: block;
+    }
+  }
+  &-y-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+  }
+  &-sec {
+    background-color: var(--mt-theme-color-2);
+    padding: 16px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: var(--mt-font-heading);
+    color: var(--mt-common-black);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    &-lg {
+      padding: 22px 46px;
+    }
+    & i {
+      height: 100%;
+      width: 22px;
+      background-color: #e5cf00;
+      position: absolute;
+      bottom: -2px;
+      right: -9px;
+      transform: rotate(16deg);
+      transition: 0.3s;
+    }
+    &:hover {
+      & .mt-btn-y-1 {
+        transform: translateY(-100%);
+      }
+      & .mt-btn-y-2 {
+        transform: translateY(0);
+      }
+      & i {
+        right: -100px;
+      }
+    }
+  }
+
+  &-circle {
+    font-family: var(--mt-font-heading);
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.3;
+    border: 2px solid rgb(217, 217, 217, 0.3);
+    border-radius: 100%;
+    display: inline-block;
+    padding: 45px 75px;
+    transition: 0.3s;
+    @media #{$xs} {
+      font-size: 45px;
+      padding: 35px 55px;
+    }
+    &:hover {
+      background-color: var(--mt-theme-color);
+      color: #ffffff;
+      border: var(--mt-theme-color);
+      opacity: 1;
+    }
+  }
+}
+
+.mt-text-btn {
+  font-size: 18px;
+  font-family: var(--mt-font-heading);
+  color: #57595c;
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-left: 12px;
+    transform: rotate(-45deg);
+  }
+}
+// .mt-btn-sec:hover i {
+//   background-color: #ffffff;
+// }

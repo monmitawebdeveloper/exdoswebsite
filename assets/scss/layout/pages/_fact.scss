@@ -1,0 +1,43 @@
+@use "../../utils/" as *;
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media #{$xs} {
+    justify-content: center;
+  }
+}
+
+.mtfact {
+  &__icon {
+    & span {
+      font-size: 110px;
+      color: var(--mt-theme-color-2);
+      display: inline-flex;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-family: var(--mt-font-heading);
+    font-weight: normal;
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  &__text {
+    & span {
+      font-size: 100px;
+      color: #fff;
+      line-height: 1;
+      display: inline-block;
+    }
+  }
+}
+
+.cols {
+  @media #{$md} {
+    width: 50%;
+  }
+}

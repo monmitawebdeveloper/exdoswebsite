@@ -1,0 +1,99 @@
+@use "../utils/" as *;
+
+.w-img {
+  & img {
+    width: 100%;
+  }
+}
+
+.m-img {
+  & img {
+    max-width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+
+.overflow-y-visible {
+  overflow: hidden;
+  overflow: visible;
+}
+
+.overflow-x-visible {
+  overflow: hidden;
+  overflow: visible;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.br-24 {
+  border-radius: 24px;
+}
+.br-20 {
+  & img {
+    border-radius: 20px;
+  }
+}
+.br-15 {
+  & img {
+    border-radius: 15px;
+  }
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.mt-black-bg {
+  background-color: var(--mt-common-black);
+}
+
+.mt-blue-bg {
+  background-color: var(--mt-theme-color);
+}
+
+.mt-yellow-bg {
+  background-color: var(--mt-theme-color-2);
+}
+
+.mt-nblue-bg {
+  background-color: var(--mt-theme-nblue);
+}
+
+.mt-cream-bg {
+  background-color: var(--mt-cream);
+}
+
+.mt-slide-transition {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.mt-brand-slide-element {
+  width: auto;
+  display: inline-block;
+}

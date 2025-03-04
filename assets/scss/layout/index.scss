@@ -1,0 +1,6 @@
+@use "../utils/" as *;
+
+@forward "blog";
+@forward "footer";
+@forward "header";
+@forward "pages";

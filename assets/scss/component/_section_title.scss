@@ -1,0 +1,32 @@
+@use "../utils" as *;
+
+.mt-section-title {
+  font-family: var(--mt-font-heading);
+  font-size: 60px;
+
+  @media #{$lg} {
+    font-size: 54px;
+  }
+
+  @media #{$md,$xs} {
+    font-size: 40px;
+  }
+  & br {
+    @media #{$xs} {
+      display: none;
+    }
+  }
+
+  &-white {
+    color: var(--mt-white);
+  }
+  &-wrapper {
+    & p {
+      & br {
+        @media #{$xs} {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@use "../../utils/" as *;
+
+.mt-team-area {
+  @media #{$xl} {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media #{$lg,$md} {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  @media #{$xs } {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 70px !important;
+  }
+}
+
+.mtteam {
+  &__thumb {
+    & img {
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+  }
+  &__nav {
+    @media #{$md,$xs} {
+      margin-bottom: 20px;
+    }
+
+    & span {
+      height: 12px;
+      width: 12px;
+      background-color: #dbdbdb;
+      border-radius: 100%;
+      margin: 0 20px;
+    }
+  }
+
+  &__info {
+    @media #{$xxlm, $xl,$xs} {
+      margin-left: 0px !important;
+    }
+
+    @media #{$lg} {
+      margin-left: 40px !important;
+    }
+
+    @media #{$md,$xs} {
+      margin-left: 20px !important;
+    }
+
+    & span {
+      font-size: 17px;
+      color: var(--mt-body-color);
+      line-height: 28px;
+
+      & i {
+        width: 60px;
+        height: 2px;
+        background-color: #d6d6d1;
+        display: inline-block;
+        transform: translateY(-5px);
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__title {
+    color: #0a0e1a;
+    font-size: 30px;
+
+    @media #{$md,$xs} {
+      font-size: 25px;
+    }
+  }
+
+  &__social {
+    & a {
+      font-size: 25px;
+      color: #0a0e1a;
+      margin-right: 10px;
+
+      @media #{ $xl} {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.mt-swiper-team-button {
+  display: inline-flex;
+  font-size: 52px;
+}

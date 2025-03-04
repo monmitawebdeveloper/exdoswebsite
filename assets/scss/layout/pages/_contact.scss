@@ -1,0 +1,16 @@
+@use "../../utils/" as *;
+
+.fs-100 {
+  font-size: 100px !important;
+
+  @media #{$xl} {
+    font-size: 90px !important;
+  }
+  @media #{$xs} {
+    font-size: 75px !important;
+  }
+}
+
+.mtform-title {
+  font-size: 30px;
+}

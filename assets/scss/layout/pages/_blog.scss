@@ -1,0 +1,47 @@
+@use '../../utils/' as *;
+
+.mtblog {
+    &__thumb {
+        & img {
+            border-radius: 20px;
+        }
+    }
+
+    &__content {
+        @media #{$lg,$md} {
+            padding-left: 0 !important;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        color: var(--mt-heading-color);
+        line-height: 1.25;
+        font-weight: 400;
+
+        @media #{$lg} {
+            font-size: 25px;
+        }
+    }
+
+    &__meta {
+        & span {
+            font-size: 17px;
+            color: var(--mt-body-color);
+
+            & i {
+                margin-right: 8px;
+            }
+        }
+
+        & cite {
+            width: 2px;
+            height: 16px;
+            display: inline-block;
+            background-color: var(--mt-body-color);
+            margin: 0 15px;
+        }
+    }
+
+
+}
