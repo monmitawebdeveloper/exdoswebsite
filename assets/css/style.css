@@ -1475,7 +1475,7 @@
 .mt-btn-circle:hover {
   background-color: var(--mt-theme-color);
   color: #ffffff;
-  border: var(--mt-theme-color);
+  border: 2px solid var(--mt-theme-color);
   opacity: 1;
 }
 
