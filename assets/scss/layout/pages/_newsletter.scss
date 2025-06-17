@@ -37,7 +37,7 @@
       color: var(--mt-white);
 
       &:focus {
-        border-color: #fff;
+        border-color: #ffffff;
         color: var(--mt-white);
       }
 
@@ -71,11 +71,11 @@
   &-back {
     font-size: 100px;
     color: var(--mt-sweet-vanilla);
-    opacity: 1;
+    opacity: 0.2;
     margin: 0;
     position: absolute;
     left: 85px;
-    bottom: -28px;
+    bottom: -34px;
     letter-spacing: 1px;
 
     @media #{$xl} {
@@ -99,6 +99,10 @@
       }
       @include mt-placeholder {
         color: var(--mt-body-color);
+      }
+      &-back {
+        color: var(--mt-sweet-vanilla);
+        opacity: 1;
       }
     }
   }

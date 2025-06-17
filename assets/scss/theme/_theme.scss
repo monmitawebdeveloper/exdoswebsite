@@ -201,16 +201,7 @@ p {
   line-height: 28px;
 }
 
-a,
-button,
-p,
-input,
-select,
-textarea,
-li,
-.transition-3 {
-  //   @extend %mt-transition-common;
-}
+// Removed empty ruleset for a, button, p, input, select, textarea, li, .transition-3
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -276,7 +267,7 @@ textarea {
   //   }
 
   &:focus {
-    border-color: #57595c;
+    // border-color: #57595c;
 
     &::placeholder {
       opacity: 0;
