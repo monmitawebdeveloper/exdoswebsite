@@ -3,7 +3,7 @@
 .mt-poject-tab-area {
   padding-right: 100px;
   @media #{$md} {
-    padding: 0 40px;
+    padding: 0 35px;
   }
   @media #{$xs} {
     padding: 0 15px;
@@ -83,6 +83,45 @@
     }
     @media #{$xs} {
       padding-left: 0 !important;
+    }
+  }
+}
+
+.mtportfolio {
+  position: relative;
+  &__thumb {
+  }
+  &__text {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    & span {
+      background-color: #ffffff;
+      padding: 18px 20px;
+      font-family: var(--mt-font-body);
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.67%;
+      text-transform: uppercase;
+      color: #0a0e1a;
+      display: inline-block;
+    }
+  }
+  &__title {
+    background-color: #ffffff;
+    padding: 8px 20px;
+    font-family: var(--mt-font-heading);
+    font-size: 30px;
+
+    margin-top: 15px;
+  }
+  &:hover {
+    & .mtportfolio__text {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

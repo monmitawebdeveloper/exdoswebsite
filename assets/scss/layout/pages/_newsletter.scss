@@ -1,4 +1,4 @@
-@use "../../utils/" as *;
+@use '../../utils/' as *;
 
 .mt-newsletter {
   &-margin {
@@ -31,21 +31,18 @@
         display: block;
       }
     }
-
     & input {
-      border-color: #fff !important;
-      color: #ffffff;
+      border: 0;
+      border-bottom: 1px solid #ffffff;
+      color: var(--mt-white);
 
       &:focus {
         border-color: #fff;
-        color: #ffffff;
-        text-transform: capitalize;
+        color: var(--mt-white);
       }
 
       @include mt-placeholder {
-        color: var(--mt-white) !important;
-        font-size: 17px;
-        text-transform: capitalize;
+        color: #ffffff;
       }
     }
   }
@@ -62,16 +59,23 @@
       top: 22px;
       right: 0;
     }
+    & i {
+      position: absolute;
+      top: 22px;
+      right: 10px;
+      font-size: 16px;
+      color: var(--mt-body-color);
+    }
   }
 
   &-back {
     font-size: 100px;
-    color: #ffffff;
-    opacity: 10%;
+    color: var(--mt-sweet-vanilla);
+    opacity: 1;
     margin: 0;
     position: absolute;
     left: 85px;
-    bottom: -35px;
+    bottom: -28px;
     letter-spacing: 1px;
 
     @media #{$xl} {
@@ -83,6 +87,19 @@
     @media #{$md} {
       font-size: 75px;
       left: 30px;
+    }
+  }
+  &-box-2 {
+    & input {
+      border-color: var(--mt-body-color);
+      color: var(--mt-body-color);
+      &:focus {
+        border-color: var(--mt-body-color);
+        color: var(--mt-body-color);
+      }
+      @include mt-placeholder {
+        color: var(--mt-body-color);
+      }
     }
   }
 }

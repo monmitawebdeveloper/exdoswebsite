@@ -1,4 +1,4 @@
-@use "../../utils/" as *;
+@use '../../utils/' as *;
 
 .fs-100 {
   font-size: 100px !important;
@@ -13,4 +13,17 @@
 
 .mtform-title {
   font-size: 30px;
+}
+
+.mtcontact-form {
+  &-box {
+    & input {
+      border: 0;
+      border-bottom: 1px solid #57595c;
+    }
+    & textarea {
+      border: 0;
+      border-bottom: 1px solid #57595c;
+    }
+  }
 }

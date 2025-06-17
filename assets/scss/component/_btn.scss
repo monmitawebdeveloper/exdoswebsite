@@ -1,8 +1,8 @@
-@use "../utils/" as *;
+@use '../utils/' as *;
 
 .mt-btn {
   background-color: var(--mt-theme-color);
-  padding: 22px 46px;
+  padding: 20px 46px;
   border-radius: 5px;
   font-size: 18px;
   font-family: var(--mt-font-heading);
@@ -10,6 +10,7 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+  text-transform: capitalize;
   & i {
     height: 100%;
     width: 22px;
@@ -118,6 +119,9 @@
   i {
     margin-left: 12px;
     transform: rotate(-45deg);
+  }
+  &:hover {
+    color: var(--mt-theme-color);
   }
 }
 // .mt-btn-sec:hover i {

@@ -12,19 +12,37 @@
   $("[data-bg-color]").each(function () {
     $(this).css("background-color", $(this).attr("data-bg-color"));
   });
-  $(".test-popup-link").magnificPopup({
+  $(".popup-image").magnificPopup({
     type: "image",
     // other options
   });
 
   $(".video-popup").magnificPopup({
     type: "iframe",
-   // other options
+    // other options
   });
 
   // tastimonial slider js
   var swiper = new Swiper(".mt-testimonial-active", {
     slidesPerView: 1,
+    spaceBetween: 30,
+
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".mt-swiper-test-button-next",
+      prevEl: ".mt-swiper-test-button-prev",
+    },
+  });
+  // tastimonial slider js
+  var swiper = new Swiper(".mt-testimonial-active-2", {
+    slidesPerView: 1,
+
     spaceBetween: 30,
 
     keyboard: {

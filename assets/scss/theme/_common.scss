@@ -49,13 +49,20 @@ img {
 .p-absolute {
   position: absolute;
 }
-
+.bg-pos-bottom {
+  background-position: bottom;
+}
 .br-24 {
   border-radius: 24px;
 }
 .br-20 {
   & img {
     border-radius: 20px;
+  }
+}
+.br-50 {
+  & img {
+    border-radius: 50%;
   }
 }
 .br-15 {
@@ -96,4 +103,8 @@ img {
 .mt-brand-slide-element {
   width: auto;
   display: inline-block;
+}
+
+.mt-text-upper {
+  text-transform: uppercase;
 }

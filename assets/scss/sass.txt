@@ -1,8 +1,4 @@
-sass --watch "E:\Selim Rana - Envato\00 - Class_practice\starter sass pack for envato - 2024\Expro-practice\assets\scss\main.scss":"E:\Selim Rana - Envato\00 - Class_practice\starter sass pack for envato - 2024\Expro-practice\assets\css\style.css"
-
-
-
-
+sass --watch "E:\Enveto Web Design - (Selim-Rana)\00 - Class_practice\starter sass pack for envato - 2024\Expro-practice\assets\scss\main.scss":"E:\Enveto Web Design - (Selim-Rana)\00 - Class_practice\starter sass pack for envato - 2024\Expro-practice\assets\css\style.css"
 
 
 

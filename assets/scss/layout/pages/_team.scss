@@ -1,4 +1,4 @@
-@use "../../utils/" as *;
+@use '../../utils/' as *;
 
 .mt-team-area {
   @media #{$xl} {
@@ -20,12 +20,27 @@
 
 .mtteam {
   &__thumb {
+    position: relative;
     & img {
       @media #{$xs} {
         width: 100%;
       }
     }
+    &-2 {
+      margin-left: 10px;
+    }
+    &-border {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #57595c;
+      border-radius: 20px;
+      z-index: -1;
+    }
   }
+
   &__nav {
     @media #{$md,$xs} {
       margin-bottom: 20px;
@@ -72,12 +87,15 @@
   &__title {
     color: #0a0e1a;
     font-size: 30px;
-
+    text-align: center;
     @media #{$md,$xs} {
       font-size: 25px;
     }
   }
-
+  &-subtitle {
+    margin-bottom: 10px;
+    display: block;
+  }
   &__social {
     & a {
       font-size: 25px;
@@ -87,6 +105,38 @@
       @media #{ $xl} {
         font-size: 20px;
       }
+    }
+    &-2 {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      & a {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        color: var(--mt-common-black);
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 2px;
+        font-size: 22px;
+        &:hover {
+          color: var(--mt-theme-color);
+        }
+      }
+    }
+  }
+  &:hover {
+    & .mtteam__social-2 {
+      opacity: 1;
+      visibility: visible;
+      top: 50%;
+      color: #000000;
     }
   }
 }

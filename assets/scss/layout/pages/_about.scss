@@ -67,3 +67,29 @@
   right: 0;
   z-index: 1;
 }
+
+.mt-about-content {
+  & ul {
+    & li {
+      list-style: none;
+      margin-bottom: 20px;
+      & i {
+        font-size: 30px;
+        font-weight: 300;
+        color: #000;
+        margin-right: 10px;
+      }
+      & span {
+        font-family: var(--mt-font-heading);
+        font-size: 30px;
+        line-height: 1.33%;
+        color: #0a0e1a;
+      }
+    }
+  }
+}
+.mt-about-circal-img {
+  position: absolute;
+  top: 0;
+  left: -180px;
+}

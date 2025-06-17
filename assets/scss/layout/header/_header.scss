@@ -3,7 +3,6 @@
 .mt-header-area {
   @media #{$xl} {
     padding-left: 30px !important;
-
   }
 
   @media #{$lg,$md} {
@@ -21,8 +20,6 @@
   right: 0;
   z-index: 99;
 }
-
-
 
 .mt-main-manu {
   & ul {
@@ -59,7 +56,7 @@
           transform: rotate(130deg);
           color: var(--mt-theme-color-2);
           opacity: 0;
-          transition: .3s;
+          transition: 0.3s;
         }
       }
 
@@ -117,7 +114,7 @@
 
           & li {
             &:hover {
-              &>.sub-menu {
+              & > .sub-menu {
                 opacity: 1;
                 visibility: visible;
                 left: 100%;
@@ -188,5 +185,9 @@
         margin: 0;
       }
     }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
   }
 }

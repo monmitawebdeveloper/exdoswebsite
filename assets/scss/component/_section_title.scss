@@ -1,30 +1,46 @@
 @use "../utils" as *;
 
-.mt-section-title {
-  font-family: var(--mt-font-heading);
-  font-size: 60px;
-
-  @media #{$lg} {
-    font-size: 54px;
-  }
-
-  @media #{$md,$xs} {
-    font-size: 40px;
-  }
-  & br {
-    @media #{$xs} {
-      display: none;
+.mt-section {
+  &-subtitle {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #57595c;
+    font-weight: 500;
+    display: block;
+    & i {
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      background-color: var(--mt-theme-color);
+      display: inline-block;
     }
   }
+  &-title {
+    font-family: var(--mt-font-heading);
+    font-size: 60px;
+    font-weight: 400;
+    @media #{$lg} {
+      font-size: 54px;
+    }
 
-  &-white {
-    color: var(--mt-white);
-  }
-  &-wrapper {
-    & p {
-      & br {
-        @media #{$xs} {
-          display: none;
+    @media #{$md,$xs} {
+      font-size: 40px;
+    }
+    & br {
+      @media #{$xs} {
+        display: none;
+      }
+    }
+
+    &-white {
+      color: var(--mt-white);
+    }
+    &-wrapper {
+      & p {
+        & br {
+          @media #{$xs} {
+            display: none;
+          }
         }
       }
     }

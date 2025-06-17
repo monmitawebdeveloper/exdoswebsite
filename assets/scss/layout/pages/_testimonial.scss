@@ -1,6 +1,9 @@
 @use "../../utils/" as *;
 
 .mt-testimonial {
+  &-main-wrapper {
+    margin-left: -80px;
+  }
   &-desc {
     font-size: 100px;
 
@@ -19,23 +22,40 @@
       font-size: 35px;
     }
   }
+  &-author {
+    &-name {
+      margin-bottom: 8px;
+      font-size: 30px;
+      line-height: 1.33;
+      font-weight: 400;
+      color: var(--mt-white);
+      font-family: var(--mt-font-heading);
+    }
 
-  &-name {
-    margin-bottom: 8px;
+    &-desig {
+      color: #57595c;
+      font-size: 17px;
+      margin-right: -75px;
+      font-family: var(--mt-font-body);
+      color: var(--mt-white);
+
+      & span {
+        height: 1px;
+        width: 60px;
+        background-color: #57595c;
+        display: inline-block;
+        transform: translateY(-5px);
+        margin-right: 5px;
+      }
+    }
   }
 
-  &-desig {
-    color: #57595c;
-    font-size: 17px;
-    margin-right: -75px;
-
-    & span {
-      height: 1px;
-      width: 60px;
-      background-color: #57595c;
-      display: inline-block;
-      transform: translateY(-5px);
-      margin-right: 5px;
+  &-text {
+    font-size: 60px;
+    color: var(--mt-white);
+    & i {
+      font-size: 60px;
+      color: var(--mt-theme-color-2);
     }
   }
 
@@ -47,7 +67,12 @@
     z-index: -2;
   }
 }
-
+i.flaticon-quotes.flip-img {
+  display: inline-block;
+  transform: scaleX(-1);
+  font-size: 60px;
+  color: var(--mt-theme-color-2);
+}
 .mt-swiper-test-button {
   position: absolute;
   left: -100px;
@@ -133,5 +158,43 @@
   &-thumb-2 {
     top: 35px;
     right: -15px;
+  }
+}
+.mt-testimonial-2 {
+  &-shape-thumb-1 {
+    top: 130px;
+    right: 148px;
+  }
+  &-shape-thumb-2 {
+    bottom: 100px;
+    right: 317px;
+  }
+}
+
+.mt-swiper-test-2-button {
+  color: #fff;
+  opacity: 0.5;
+  display: inline-flex;
+  font-size: 60px;
+  &-next {
+    color: #fff;
+    font-size: 60px;
+    opacity: 0.5;
+  }
+}
+
+.mt-test-slider-arrow-2 {
+  position: absolute;
+  bottom: 20px;
+  left: 500px;
+  z-index: 999;
+
+  & span {
+    height: 12px;
+    width: 12px;
+    background-color: var(--mt-white);
+    border-radius: 100%;
+    margin: 0 20px;
+    opacity: 0.5;
   }
 }

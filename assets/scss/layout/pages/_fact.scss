@@ -34,6 +34,29 @@
       display: inline-block;
     }
   }
+  &-2 {
+    & .mtfact {
+      &__icon {
+        & span {
+          color: #575757;
+        }
+      }
+    }
+
+    & .mtfact {
+      &__text {
+        & span {
+          color: #0a0e1a;
+        }
+      }
+    }
+    & .mtfact {
+      &__title {
+        color: #0a0e1a;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .cols {
